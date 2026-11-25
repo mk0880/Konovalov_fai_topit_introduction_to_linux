@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SUDO=""
+VERSION="v3
 
 usage() {
     echo "Usage: $0 [-h] [report_file]"
@@ -36,7 +37,7 @@ write_section() {
 }
 
 log_run() {
-    echo "date: $(date)  user: $(whoami)  format: v3" >> PASSPORT/log/report.log
+    echo "date: $(date)  user: $(whoami)  format: $(v3)" >> PASSPORT/log/report.log
 }
 
 cleanup() {
