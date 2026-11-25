@@ -1,0 +1,111 @@
+SYSTEM INFO
+
+host info:
+Wed Nov 25 02:46:49 AM MSK 2026
+Debian
+
+user info:
+root
+vboxuser seat0        2026-11-24 22:20
+vboxuser tty3         2026-11-24 22:20
+kma-1    sshd pts/2   2026-11-25 01:39 (10.0.2.2)
+root     pts/0        2026-11-24 22:29
+kma-1    seat0        2026-11-24 22:20
+kma-1    tty2         2026-11-24 22:20
+
+dir info:
+/root
+PASSPORT
+script31
+script31.sh
+script_passport.sh
+vboxpostinstall.sh
+
+kernel info:
+Linux Debian 6.12.113+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.113-1 (2026-10-15) x86_64 GNU/Linux
+
+os info:
+NAME="Debian GNU/Linux"
+VERSION="13 (trixie)"
+
+cpu info:
+CPU(s):                                  1
+Model name:                              AMD Ryzen 7 9800X3D 8-Core Processor
+L1d cache:                               48 KiB (1 instance)
+L1i cache:                               32 KiB (1 instance)
+L2 cache:                                1 MiB (1 instance)
+L3 cache:                                96 MiB (1 instance)
+
+mem info:
+MemTotal:        2021304 kB
+MemFree:          168024 kB
+
+board info:
+	Manufacturer: Oracle Corporation
+	Product Name: VirtualBox
+
+bios info:
+	Vendor: innotek GmbH
+	Version: VirtualBox
+	Release Date: 12/01/2006
+
+pci info:
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:01.1 IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
+00:05.0 Multimedia audio controller: Intel Corporation 82801AA AC'97 Audio Controller (rev 01)
+00:06.0 USB controller: Apple Inc. KeyLargo/Intrepid USB
+00:07.0 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:0b.0 USB controller: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller
+00:0d.0 SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+
+users info:
+root | UID: 0 | groups: root vboxsf | last login: Wed Nov 25 02:42:35 +0300 2026 | password changed: Nov 24, 2026
+nobody | UID: 65534 | groups: nogroup | last login: no data | password changed: Sep 26, 2026
+vboxuser | UID: 1000 | groups: vboxuser sudo users | last login: no data | password changed: Sep 26, 2026
+kma-1 | UID: 1001 | groups: kma-1 sudo users | last login: Wed Nov 25 01:39:03 +0300 2026 | password changed: Nov 24, 2026
+u1 | UID: 1002 | groups: u1 project | last login: no data | password changed: Nov 24, 2026
+u2 | UID: 1003 | groups: u2 project | last login: no data | password changed: Nov 24, 2026
+u3 | UID: 1004 | groups: u3 project | last login: no data | password changed: Nov 24, 2026
+u4 | UID: 1005 | groups: u4 dataread | last login: no data | password changed: Nov 24, 2026
+u5 | UID: 1006 | groups: u5 dataread | last login: no data | password changed: Nov 24, 2026
+
+sshd info:
+port 22 (default)
+logingracetime 30 (set in config)
+maxauthtries 2 (set in config)
+permitrootlogin no (set in config)
+pubkeyauthentication yes (set in config)
+passwordauthentication no (set in config)
+
+top5 info:
+    PID    PPID USER     %MEM COMMAND
+   3112    2967 vboxuser 10.6 gnome-software
+   1796    1652 kma-1    10.6 gnome-software
+   2999    2829 vboxuser  9.4 gnome-shell
+   1683    1515 kma-1     7.2 gnome-shell
+   3100    2967 vboxuser  3.8 evolution-alarm
+
+suspicious info:
+empty password: none
+UID 0 (not root): none
+
+suid info:
+/usr/bin/passwd
+/usr/bin/umount
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/ntfs-3g
+/usr/bin/sudo
+/usr/bin/su
+/usr/bin/gpasswd
+/usr/bin/fusermount3
+/usr/bin/mount
+/usr/bin/pkexec
+/usr/bin/vmware-user-suid-wrapper
+/usr/sbin/pppd
+
