@@ -91,18 +91,15 @@ while read -r param value; do
     fi
     echo "$param $value ($source)"
 done < $T/sshd_T.tmp > $T/sshd.tmp
-[ -s $T/sshd.tmp ] || echo "no data" > $T/sshd.tmp
 
 : > $T/top5.tmp
 check_tool ps procps && ps -eo pid,ppid,user,%mem,comm --sort=-%mem | head -6 > $T/top5.tmp
-[ -s $T/top5.tmp ] || echo "no data" > $T/top5.tmp
 
 empty_pw=$($SUDO awk -F: '$2 == "" {print $1}' /etc/shadow 2>/dev/null | tr '\n' ' ')
 uid0=$(getent passwd | awk -F: '$3 == 0 && $1 != "root" {print $1}' | tr '\n' ' ')
 { echo "empty password: ${empty_pw:-none}"; echo "UID 0 (not root): ${uid0:-none}"; } > $T/suspicious.tmp
 
 find /usr/bin /usr/sbin -type f -perm -4000 2>/dev/null > $T/suid.tmp
-[ -s $T/suid.tmp ] || echo "none" > $T/suid.tmp
 
 { echo 'SYSTEM INFO'; echo; } > $REPORT
 for f in host user dir kernel os cpu mem board bios pci users sshd top5 suspicious suid; do write_section "${f} info:" $T/$f.tmp; done
